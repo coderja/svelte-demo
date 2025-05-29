@@ -5,7 +5,4 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 export default defineConfig({
   plugins: [svelte()],
   base: "/svelte-demo",
-  build: {
-    outDir: "docs", // 强制指定构建目录为 docs
-  },
 });

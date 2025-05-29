@@ -39,8 +39,9 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Setup Pages
+      - name: List output files 
         run: ls -alh ./dist
+      - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
